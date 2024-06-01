@@ -1,0 +1,57 @@
+:root {
+    --header-color: #71458C;
+    --white-color: #ffffff;
+    --black-color:#000000;
+    --hover-color: #4E166F;
+    --banner-color: #1a1a1a;
+}
+
+.banner_sect {
+    height: 30vh;
+    background: var(--banner-color);
+    color: var(--white-color);
+}
+
+.banner_sect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_infor {
+   text-align: center;
+   width: 70%;
+}
+.banner_infor p{
+    line-height: 1.7rem;
+    padding: 1rem;
+}
+
+.banner_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leadership_title{
+    text-align: center;
+    padding: 1rem;
+}
+
+.leaders_cards {
+    width: 40%;
+    border: 2px solid red;
+    display: flex;
+    -webkit-box-flex-group: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leaders_cards .leaders_img {
+    width: 25rem;
+    height: 15rem;
+    display: grid;
+    place-content: center;
+    border: 2px solid black;
+}
+
