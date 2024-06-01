@@ -2,6 +2,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Heros from './components/Header/Heros'
+import Testimonials from './components/Header/Testimonials'
 import HeaderAbout from './components/Header/HeaderAbout'
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <Header/>
     <Heros/>
     <HeaderAbout />
+    <Testimonials />
 
   </>)
 }
