@@ -221,13 +221,58 @@ button:hover{
     font-size: 2rem;
     padding: .5rem;
 }
-.testimonials_sec p{
+.testimonials_sect p{
     padding: .5rem;
 }
-
+.testimonials_sect .user_testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 .testmonial_design_sect {
-    border: 2px solid blue;
-    padding: 2rem;
-    width: 30rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    background-color: var(--header-color);
+}
 
+.designs{
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20rem;
+    gap: 1rem;
+}
+
+.testmonial_design_sect .testmonial_text {
+    width: 50%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.testmonial_design_sect .testmonial_image {
+    background: var(--header-color);
+    width:50%;
+    border-radius: .5rem;
+    background-image: url('./user.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.quotesIcon{
+    color: var(--hover-color);
+    font-size: 2rem;
+    border: 2px solid palegoldenrod;
+}
+
+.desingnations p{
+    /* font-size: 1.2rem; */
+    text-align: center;
+    color: var(--white-color);
+}
+.desingnations h2{
+    color: var(--white-color);
 }
