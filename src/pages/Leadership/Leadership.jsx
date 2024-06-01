@@ -1,12 +1,12 @@
 import './leadership.css'
-import PageBanner from './Pagebanner'
+import PageBanner from '../../components/Pagebanner'
 import LeadersCard from './LeadersCard'
-
+import PageSubtitles from '../../components/PageSubtitle'
 
 const Leadership = () => {
     return <>
         <PageBanner />
-        <h1 className='leadership_title'>Our Perfect Team</h1>
+        < PageSubtitles title="Our Perfect Team"/>
         <LeadersCard/>
     </>
 }

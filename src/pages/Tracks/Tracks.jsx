@@ -1,7 +1,17 @@
+import './tracks.css'
+import PageBanner from '../../components/Pagebanner'
+import PageSubtitles from '../../components/PageSubtitle'
+import Footer from '../../components/Header/Footer'
+import TracksCard from './TracksCard'
 const Tracks = () => {
     return <>
-    <h1>Tracks</h1>
+
+        <PageBanner />
+        <PageSubtitles title="Tracks Offered" />
+        < TracksCard />
+        < Footer/>
+    
     </>
 }
 
-export default Events
+export default Tracks

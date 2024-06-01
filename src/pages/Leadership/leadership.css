@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .leadership_title{
@@ -37,21 +38,66 @@
     padding: 1rem;
 }
 
+.leadersCards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
 .leaders_cards {
     width: 40%;
-    border: 2px solid red;
+    border-radius: 1rem;
     display: flex;
-    -webkit-box-flex-group: row;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
+    background: #e7dcdc;
+    flex-direction: row;
+    padding: .5rem;
+    justify-content: center;
 }
 
-.leaders_cards .leaders_img {
-    width: 25rem;
+/* .leaders_cards .leaders_img img {
+    width: 15rem;
     height: 15rem;
+    border-radius: 50%;
+    border: 2px solid red;
+} */
+.leaders_cards .leaders_img {
+    width: 50%;
+    background-image: url('../../images/user.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    padding:    5rem;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.leaders_cards .leaders_details {
+    padding: 0 1rem;
+}
+
+.leaders_details h2{
+    padding: .7rem 0;
+    color: var(--header-color);
+    
+}
+
+.leaders_details{
+    width: 50%;
+    border: 2px solid yellow;
+}
+.leaders_details p{
+    padding: 0;
+    line-height: 1.5;
+    padding-bottom: .5rem;
+    
+}
+
+.leaders_details div {
+    margin-top: 2.5rem;
+    border: 2px solid green;
     display: grid;
     place-content: center;
-    border: 2px solid black;
+    padding: .5rem;
 }
-
