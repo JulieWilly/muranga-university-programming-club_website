@@ -33,7 +33,7 @@ const Footer = () => {
             <SocialIcons />
             <Form/>
         <hr />
-        <p className="footer_note">&copy; Develped with love by Wilfred Muchire Kiama: All rights reserved.</p>
+        <p className="footer_note">&copy; Developed with love by Wilfred Muchire Kiama: All rights reserved.</p>
               
         </div>
     </sections>)

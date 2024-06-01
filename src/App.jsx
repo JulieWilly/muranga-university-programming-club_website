@@ -1,22 +1,23 @@
-
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css'
 import Header from './components/Header/Header'
-import Heros from './components/Header/Heros'
-import Testimonials from './components/Header/Testimonials'
-import HeaderAbout from './components/Header/HeaderAbout'
-import Footer from './components/Header/Footer'
 import Leadership from './pages/Leadership/Leadership'
 import Tracks from './pages/Tracks/Tracks'
+import Events from './pages/Events/Events'
 
 const App = () => {
   return (<>
+  <BrowserRouter>
     <Header/>
-    <Tracks />
-    {/* <Heros/>
-    <HeaderAbout />
-    <Testimonials />
-    <Footer/> */}
-    {/* < Leadership/> */}
+    <Routes>
+      {/* <Route path="/" element={<Header/>} /> */}
+      <Route path="/leadership" element={< Leadership/>} />
+      <Route path="/tracks" element={<Tracks/>} />  
+      <Route path="/events" element={<Events/>} /> 
+    </Routes>
+  </BrowserRouter>
+  
+     
 
   </>)
 }

@@ -1,5 +1,6 @@
 import './homeSection.css'
 import { FaCode } from "react-icons/fa"
+import { Link } from 'react-router-dom'
 
 const NavigationLinks = ({label}) => {
     return (
