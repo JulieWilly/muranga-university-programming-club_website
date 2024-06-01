@@ -1,5 +1,6 @@
 import React from 'react';
 import './homeSection.css'
+import NavigationLinks from './NavigationLinks';
 
 import { FaCode } from "react-icons/fa"
 
@@ -13,17 +14,7 @@ const Logo = ({logo, label}) => {
         </div>
     )
 }
-const NavigationLinks = ({label}) => {
-    return (
-        <div className="nav-links">
-            <nav>
-                <ol>
-                    <li><a href="#">{label}</a></li>
-                </ol>
-            </nav>
-        </div>
-    )
-}
+
 
 const Header = () => {
     return <section >
