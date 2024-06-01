@@ -135,7 +135,77 @@ button:hover{
 }
 
 
-
-
 /* ########## ABOUT SECTION ###########*/
+
+.about_sect {
+    margin: 3rem 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.about_text {
+    width: 50%;
+    padding: 1rem;
+    border: 2px solid brown;
+    text-align: left;
+}
+.about_img {
+    background-image: url(./8.png);
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-color: red;
+}
+
+
+.about_text h1{
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+.about_text p{
+    letter-spacing: .05rem;
+    line-height: 1.5;
+}
+
+.values_section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.about_core_values{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+    width: 80%;
+    padding: 1rem;
+    border: 2px solid var(--hover-color);
+    border-radius: 5rem;
+}
+.about_core_values:hover{
+    background: var(--header-color);
+    color: var(--white-color);
+    fill: var(--white-color);
+    transition: all ease-in-out .5s;
+
+}
+.about_core_values  {
+}
+
+.about_core_values .core_icon {
+    font-size: 2rem;
+    border: 1px solid var(--hover-color);
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.values_section .description h1{
+    padding: .5rem 0;
+}
 
