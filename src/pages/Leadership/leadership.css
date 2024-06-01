@@ -4,6 +4,7 @@
     --black-color:#000000;
     --hover-color: #4E166F;
     --banner-color: #1a1a1a;
+    --card_background: #e7dcdc;
 }
 
 .banner_sect {
@@ -50,7 +51,7 @@
     border-radius: 1rem;
     display: flex;
     gap: 1rem;
-    background: #e7dcdc;
+    background:var(--card_background);
     flex-direction: row;
     padding: .5rem;
     justify-content: center;

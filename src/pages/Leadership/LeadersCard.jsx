@@ -1,6 +1,6 @@
 import { FaFacebookF } from "react-icons/fa6";
 import Footer from "../../components/Header/Footer";
-
+import './leadership.css'
 
 const Cards = ({leadersImg, leaderName, leadersDesignation, leadersBiography, leadersSocials}) => {
     return (
