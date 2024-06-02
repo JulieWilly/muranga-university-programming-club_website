@@ -45,10 +45,11 @@
   flex-direction: row;
   gap: 2rem 0;
   flex-wrap: wrap;
-  border: 2px solid black;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 2rem;
+  padding: 1rem;
+
 }
 .leaders_cards {
   display: flex;
@@ -72,7 +73,7 @@
 }
 
 .leaders_cards .leaders_img img {
-  /* display: block; */
+  display: block;
   width: 100%;
   height: 100%;
 
@@ -117,6 +118,25 @@
   padding: 0.5rem;
 }
 
+.link{
+  padding: .5rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: 1px solid #71458c;
+  color: #71458c;
+}
+.leaders_icons  {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  padding: 1rem;
+  flex-direction: row;
+}
+.link:hover{
+  transform: scale(1.1);
+  transition: all ease-in-out .5s;
+}
 @media screen and (max-width:500px) {
   .leadersCards{
     margin: 1rem;
