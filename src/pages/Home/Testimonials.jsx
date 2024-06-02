@@ -1,6 +1,6 @@
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import "./homeSection.css";
+import "../../components/Header/homeSection.css";
 const QuotesIcon = ({ quoteIcon }) => {
   return <section className="quotesIcon">{quoteIcon}</section>;
 };
