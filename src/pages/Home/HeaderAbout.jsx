@@ -1,4 +1,4 @@
-// import "../../components/Header/homeSection.css";
+import "../../components/Header/homeSection.css";
 import { TbTargetArrow } from "react-icons/tb";
 import { FcBinoculars } from "react-icons/fc";
 import { BiNotepad } from "react-icons/bi";

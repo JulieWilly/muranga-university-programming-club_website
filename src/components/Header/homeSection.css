@@ -178,12 +178,15 @@ button:hover {
   padding: .5rem;
   border: 2px solid var(--hover-color);
   border-radius: 5rem;
+  transition: width 2s;
+
 }
 .about_core_values:hover {
+  width: 74%;
   background: var(--header-color);
   color: var(--white-color);
   fill: var(--white-color);
-  transition: all ease-in-out 1s;
+  transition: all ease 1s;
 }
 
 .about_core_values .core_icon {
