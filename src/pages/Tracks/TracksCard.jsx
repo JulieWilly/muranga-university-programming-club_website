@@ -1,11 +1,18 @@
 import "./tracks.css";
+import UI_UXIMG from '../../images/ui_ux.jpg'
+import web_devIMG from '../../images/web_dev.jpg';
+import cyber_securityImg from '../../images/cyberSecurity.jpeg'
+import androidImg from '../../images/android.jpg'
+import cloud_engineeringImg from '../../images/cloud_engineering.jpg'
+import power_platformImg from '../../images/cloud_power.png'
+
+
 import { SiReacthookform } from "react-icons/si";
 const ApplicationForm = ({ applyImg, applicationMessage }) => {
   return (
     <section className="application_sect">
       <div className="application_message">
         <div className="application_image">{applyImg}</div>
-        {/* <h2>Apply with us to equip yourself with programming skills to catch up with the ever changing technologies.</h2> */}
         <h2>{applicationMessage}</h2>
       </div>
       <div className="form">
@@ -41,7 +48,9 @@ const TrackItems = ({
   return (
     <>
       <div className="track_card">
-        <div className="track_img">{trackImg}</div>
+        <div className="track_img">
+         <img src={trackImg} alt="Course / Track Image" /> 
+        </div>
         <div className="reviews">
           <div className="track_ratings">
             <span class="fa fa-star checked"></span>
@@ -60,10 +69,10 @@ const TrackItems = ({
         <div className="tract_bottom">
           <div className="followers">
             <div className="track_followers">
-              {trackImg}
-              {/* <img src="" alt="" /> */}
+              
+              <img src={trackImg} alt="" />
             </div>
-            <p>2K+</p>
+            <p>2K+ followers</p>
           </div>
           <p className="enroll">Enroll</p>
         </div>
@@ -76,33 +85,39 @@ const TracksCard = () => {
     <>
       <div className="trackCard">
         <TrackItems
+        trackImg={cyber_securityImg}
           trackName="Cyber Security"
           trackDescription="You will learn about various security protocols, ethical hacking, encryption techniques, and threat analysis"
           trackDuration="3 Months"
         />
         <TrackItems
-          trackName="Cyber Security"
-          trackDescription="Throughout this track, they will learn about various security protocols, ethical hacking, encryption techniques, and threat analysis."
+          trackImg={UI_UXIMG}
+          trackName="UI / UX Design"
+          trackDescription="You will learn about user research, wireframing, prototyping, and usability testing.students will gain hands-on experience in designing."
+          trackDuration="2 Months"
+        />
+        <TrackItems
+        trackImg={web_devIMG}
+          trackName="Web Development"
+          trackDescription="You will learn the fundamentals of front-end development using HTML, CSS, and JavaScript, and back-end development with technologies."
+          trackDuration="5 Months"
+        />
+        <TrackItems
+        trackImg={androidImg}
+          trackName="Mobile Development"
+          trackDescription="You will explore the basics of mobile app development techonologies languages like Java, Kotlin, Swift, and Dart."
+          trackDuration="4 Months"
+        />
+        <TrackItems
+        trackImg={cloud_engineeringImg}
+          trackName="Cloud Engineering"
+          trackDescription="You will learn about various cloud service providers such as AWS, Google Cloud, and Microsoft Azure."
           trackDuration="3 Months"
         />
         <TrackItems
-          trackName="Cyber Security"
-          trackDescription="Throughout this track, they will learn about various security protocols, ethical hacking, encryption techniques, and threat analysis."
-          trackDuration="3 Months"
-        />
-        <TrackItems
-          trackName="Cyber Security"
-          trackDescription="Throughout this track, they will learn about various security protocols, ethical hacking, encryption techniques, and threat analysis."
-          trackDuration="3 Months"
-        />
-        <TrackItems
-          trackName="Cyber Security"
-          trackDescription="Throughout this track, they will learn about various security protocols, ethical hacking, encryption techniques, and threat analysis."
-          trackDuration="3 Months"
-        />
-        <TrackItems
-          trackName="Cyber Security"
-          trackDescription="Throughout this track, they will learn about various security protocols, ethical hacking, encryption techniques, and threat analysis."
+        trackImg={power_platformImg}
+          trackName="Power Platform"
+          trackDescription="You will learn how to create custom business applications, automate workflows, analyze data, and build chatbots with minimal coding."
           trackDuration="3 Months"
         />
       </div>

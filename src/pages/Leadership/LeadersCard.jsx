@@ -1,4 +1,8 @@
+import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 import Footer from "../../components/Header/Footer";
 import drNdiaImg from '../../images/group.jpg'
 import "./leadership.css";
@@ -43,7 +47,7 @@ const LeadersCard = () => {
           leaderName="DR John Ndia"
           leadersDesignation="Patron of the club"
           leadersBiography="Please create a brief biography for him and use any suitable placeholder images found online for his profile picture."
-          leadersSocials={<SocialIcons />}
+          leadersSocials={<SocialIcons social_icon={<BsTwitterX />}/>}
         />
         <Cards
           leadersImg={<FaFacebookF />}

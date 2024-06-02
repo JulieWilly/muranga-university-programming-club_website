@@ -8,7 +8,7 @@ const Events = () => {
     <>
       <Pagebanner
         bannerTitle="Clubs Events"
-        bannerDescription="The Events Page serves as a comprehensive guide to the weekly schedule of MUTC. From Monday through Saturday, members can expect a diverse range of learning opportunities and activities."
+        bannerDescription="Welcome to Clubs Events! Join us weekly for engaging sessions in cybersecurity, Android development, and web development. Enjoy convenient, hands-on learning experiences and connect with fellow enthusiasts. Enhance your skills and stay updated with the latest trends in a supportive environment."
       />
       <EventsCards
         icon={<GiThreeFriends />}

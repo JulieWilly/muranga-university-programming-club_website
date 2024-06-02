@@ -2,7 +2,18 @@ import { GiThreeFriends } from "react-icons/gi";
 import { MdOutlineToday } from "react-icons/md";
 import { FiMapPin } from "react-icons/fi";
 import { GiDuration } from "react-icons/gi";
+import { GoCodeReview } from "react-icons/go";
+import { BsPersonWorkspace } from "react-icons/bs";
+import PageSubtitles from '../../components/PageSubtitle'
 import Footer from "../../components/Header/Footer";
+import UI_UXIMG from '../../images/ui_ux.jpg'
+import web_devIMG from '../../images/web_dev.jpg';
+import cyber_securityImg from '../../images/cyberSecurity.jpeg'
+import androidImg from '../../images/android.jpg'
+import cloud_engineeringImg from '../../images/cloud_engineering.jpg'
+import power_platformImg from '../../images/cloud_power.png'
+
+
 const EventsCardsDesign = ({ icon, title, desc }) => {
   return (
     <div>
@@ -38,8 +49,7 @@ const AlternatingEvents = ({
       <div className="alternating_events">
         <p className="day">{number}</p>
         <div className="event_image">
-          {eventImage}
-          {/* <img src="" alt="" /> */}
+          <img src={eventImage} alt="" />
         </div>
         <div className="event_details">
           <h1>{eventLabel}</h1>
@@ -77,52 +87,77 @@ const EventsCards = () => {
           />
           <EventsCardsDesign
             icon={<GiThreeFriends />}
-            title="Friendly Teams"
+            title="Convenient Venues"
             desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veritatis saepe nihil voluptatum cupiditate, tempore libero repellendus expedita earum minus consectetur sed."
           />
           <EventsCardsDesign
-            icon={<GiThreeFriends />}
-            title="Friendly Teams"
+            icon={<GoCodeReview />}
+            title="Pair Programming"
             desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veritatis saepe nihil voluptatum cupiditate, tempore libero repellendus expedita earum minus consectetur sed. "
           />
           <EventsCardsDesign
-            icon={<GiThreeFriends />}
-            title="Friendly Teams"
+            icon={<BsPersonWorkspace />}
+            title="Hands-on projects"
             desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veritatis saepe nihil voluptatum cupiditate, tempore libero repellendus expedita earum minus consectetur sed. "
           />
         </div>
+        < PageSubtitles title={'Upcoming Weekly Events'}/>
         <div className="alternatingEvents">
           <AlternatingEvents
+            eventImage={cyber_securityImg}
             number="1"
+            eventLabel="Cyber security"
+            eventDay="Monday"
+            eventVenue={"Lab F04"}
+            eventDuration={"4pm to 7pm"}
+            eventTutor={"Webster Ifedha"}
+          />
+          <AlternatingEvents
+            number="2"
+            eventImage={UI_UXIMG}
+            eventLabel="UI / UX"
+            eventDay="Tuesday"
+            eventVenue={"Lab F04"}
+            eventDuration={"5pm to 8pm"}
+            eventTutor={"Manase Gunga"}
+          />
+          <AlternatingEvents
+            number="3"
+            eventImage={web_devIMG}
             eventLabel="Web Development"
             eventDay="Wednesday"
             eventVenue={"Lab F04"}
             eventDuration={"6PM - 9PM"}
             eventTutor={"Carolyne Githenduka"}
           />
+         
           <AlternatingEvents
-            number="1"
-            eventLabel="Web Development"
-            eventDay="Wednesday"
+            number="4"
+            eventImage={androidImg}
+            eventLabel="Mobile apps development"
+            eventDay="Thursday"
             eventVenue={"Lab F04"}
-            eventDuration={"6PM - 9PM"}
-            eventTutor={"Carolyne Githenduka"}
+            eventDuration={"4PM to 7PM"}
+            eventTutor={"Stanley Amunze"}
+          />
+
+          <AlternatingEvents
+            number="5"
+            eventImage={cloud_engineeringImg}
+            eventLabel="Cloud engineering"
+            eventDay="Friday"
+            eventVenue={"Lab F04"}
+            eventDuration={"3pm to 6pm"}
+            eventTutor={"Paul Karanja"}
           />
           <AlternatingEvents
-            number="1"
-            eventLabel="Web Development"
-            eventDay="Wednesday"
+            number="6"
+            eventImage={power_platformImg}
+            eventLabel="Power Platform"
+            eventDay="Saturday"
             eventVenue={"Lab F04"}
-            eventDuration={"6PM - 9PM"}
-            eventTutor={"Carolyne Githenduka"}
-          />
-          <AlternatingEvents
-            number="1"
-            eventLabel="Web Development"
-            eventDay="Wednesday"
-            eventVenue={"Lab F04"}
-            eventDuration={"6PM - 9PM"}
-            eventTutor={"Carolyne Githenduka"}
+            eventDuration={"1pm to 4pm"}
+            eventTutor={"Evyonn Mbithe"}
           />
         </div>
         <Footer />

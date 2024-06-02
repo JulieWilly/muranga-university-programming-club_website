@@ -1,3 +1,4 @@
+
 const BannerText = ({ bannerTitle, bannerDescription }) => {
   return (
     <div className="banner_infor">

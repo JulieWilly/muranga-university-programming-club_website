@@ -7,8 +7,8 @@ const Tracks = () => {
   return (
     <>
       <PageBanner
-        bannerTitle="Club Events"
-        bannerDescription="The Leadership Page will highlight the dedicated team behind Murang'a University Tech Club (MUTC). This page will feature profiles of the club's leaders, including their roles, responsibilities, links to their social media accounts, and brief biographies. "
+        bannerTitle="Tracks"
+        bannerDescription="Explore our tracks: Cybersecurity, Android, Web Development, and Cloud Computing. Each track is taught by qualified tutors and spans 3 to 6 months, offering in-depth, hands-on learning. Join us to gain practical skills and knowledge in your chosen field, guided by expert instructors."
       />
       <PageSubtitles title="Tracks Offered" />
       <TracksCard />

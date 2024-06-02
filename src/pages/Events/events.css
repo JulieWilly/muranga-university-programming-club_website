@@ -15,7 +15,7 @@
   justify-content: center;
   text-align: center;
   width: 15rem;
-  border: 2px solid #71458c;
+  border: 1px solid #71458c;
   border-radius: 1rem;
   padding: 0.5rem;
 }
@@ -25,48 +25,55 @@
 }
 .card_icon {
   font-size: 2rem;
-  border: 2px solid;
+  border: 1px solid #71458c;
   display: grid;
   place-content: center;
   padding: 0.5rem;
   border-radius: 50%;
-  border-color: black;
+  
 }
 .cards h3 {
   padding: 0.5rem;
+  color: #71458c;
 }
 
 .alternatingEvents {
-  border: 2px solid red;
-  margin: 2rem;
-  padding: 1rem;
+  margin: 1rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem 2rem;
 }
 
 .alternating_events {
   display: flex;
   flex-direction: row;
-  border: 2px solid black;
+  border: 1px solid black;
   background: #e7dcdc;
-  padding: 0.7rem 0.5rem;
-  align-items: center;
+  padding:0.5rem;
   gap: 0 0.5rem;
+  align-items: center;
+  width: 33rem;
+  height: 15rem;
   position: relative;
   border-radius: 0.5rem;
+
 }
 
 .event_image {
   width: 17rem;
-  background-image: url("../../images/cyberSecurity.jpeg");
   background-position: center;
   background-size: cover;
   height: 13rem;
-  border-radius: 0.5rem;
+
 }
 
+.event_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+
+}
 .day {
   text-align: center;
   position: absolute;
