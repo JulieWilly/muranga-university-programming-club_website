@@ -1,6 +1,11 @@
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import dummy_memberImg from '../../images/dummy_member1.jpg'
+import dummy_member2Img from '../../images/dummy_member2.jpeg'
+import dummy_member3Img from '../../images/dummy_member3.jpg'
+
 import "../../components/Header/homeSection.css";
+import PageSubtitles from "../../components/PageSubtitle";
 const QuotesIcon = ({ quoteIcon }) => {
   return <section className="quotesIcon">{quoteIcon}</section>;
 };
@@ -10,14 +15,17 @@ const TestmonialDesign = ({ quotes, image, name, designation }) => {
       <div className="designs">
         <div className="testmonial_text">
           <p>
-            <RiDoubleQuotesL />
+            <RiDoubleQuotesL className="icons_quotes"/>
             {quotes}
-            <RiDoubleQuotesR />
+            <RiDoubleQuotesR className="icons_quotes" />
           </p>
         </div>
 
-        <div className="testmonial_image">{image}</div>
+        <div className="testmonial_image">
+          <img src={image} alt="" />
+          </div>
       </div>
+      <hr />
       <div className="desingnations">
         <h2>{name}</h2>
         <p>{designation}</p>
@@ -28,26 +36,27 @@ const TestmonialDesign = ({ quotes, image, name, designation }) => {
 const Testimonials = () => {
   return (
     <section className="testimonials_sect">
-      <h1>Testimonials</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolor
-        modi harum voluptatem ducimus eveniet sunt beatae nemo ipsam quidem.
-      </p>
+      <PageSubtitles title={"Testimonials"} des/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolor
+        modi harum voluptatem ducimus eveniet sunt beatae nemo ipsam quidem.</p>
       <div className="user_testimonial">
         <TestmonialDesign
+        image={dummy_memberImg}
           quotes="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolor modi harum voluptatem ducimus eveniet sunt beatae nemo ipsam quidem."
-          name="Sir Wilfred Kiama"
-          designation="Chairperson"
+          name=" Madam Rachel"
+          designation="Former Chairperson"
         />
         <TestmonialDesign
+        image={dummy_member2Img}
           quotes="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolor modi harum voluptatem ducimus eveniet sunt beatae nemo ipsam quidem."
-          name="Sir Wilfred Kiama"
-          designation="Chairperson"
+          name="Sir Luther King Jr."
+          designation="Former Secretary"
         />
         <TestmonialDesign
+        image={dummy_member3Img}
           quotes="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolor modi harum voluptatem ducimus eveniet sunt beatae nemo ipsam quidem."
-          name="Sir Wilfred Kiama"
-          designation="Chairperson"
+          name="Sir James Spader"
+          designation="Alumni"
         />
       </div>
     </section>

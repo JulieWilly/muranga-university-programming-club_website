@@ -53,17 +53,16 @@
 .leaders_cards {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: 1px solid black;
+  overflow: hidden;
 }
 .top {
   width: 30rem;
-  border: 1px solid black;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
   display: flex;
   background: var(--card_background);
   flex-direction: row;
-  padding: 0.5rem;
   align-items: center;
 }
 
@@ -73,7 +72,8 @@
 }
 
 .leaders_cards .leaders_img img {
-  border: 2px solid red;
+  object-fit: cover;
+  display: block;
   width: 100%;
   height: 100%;
 
@@ -102,7 +102,6 @@
 
 .leaders_details {
   width: 50%;
-  border: 2px solid yellow;
 }
 .leaders_details p {
   padding: 0;

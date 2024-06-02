@@ -21,7 +21,7 @@ const Cards = ({
     <div className="leaders_cards">
         <div className="top">
           <div className="leaders_img">
-          {/* {leadersImg} */}
+        
           <img src={leadersImg} alt="" />
           </div>
           <div className="leaders_details">
