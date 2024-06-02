@@ -72,8 +72,7 @@
 }
 
 .leaders_cards .leaders_img img {
-  object-fit: cover;
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
 
