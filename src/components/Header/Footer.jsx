@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <sections>
       <div className="footer_sect">
-        <h1>MUTC</h1>
+        <h1>M.U.T.P.C</h1>
 
         <p>Programming Hub</p>
         <div className="links">
