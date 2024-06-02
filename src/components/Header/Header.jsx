@@ -1,13 +1,10 @@
 import React from "react";
 import "./homeSection.css";
 import NavigationLinks from "./NavigationLinks";
-import Tracks from "../../pages/Tracks/Tracks";
-import Heros from '../../pages/Home/Heros'
-import HeaderAbout from '../../pages/Home/HeaderAbout'
+
 import { Link } from "react-router-dom";
 
 import { FaCode } from "react-icons/fa";
-import Footer from "./Footer";
 
 const Logo = ({ logo, label }) => {
   return (
@@ -23,7 +20,7 @@ const Header = () => {
     <section>
       <div className="header">
         <div className="logo_section">
-          <Logo logo={<FaCode />} label="Muranga" />
+          <Logo logo={<FaCode />} label="M.U.T.P.C" />
         </div>
         <div className="links">
           <Link className="Links" to="/">

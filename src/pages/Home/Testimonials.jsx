@@ -6,9 +6,7 @@ import dummy_member3Img from '../../images/dummy_member3.jpg'
 
 import "../../components/Header/homeSection.css";
 import PageSubtitles from "../../components/PageSubtitle";
-const QuotesIcon = ({ quoteIcon }) => {
-  return <section className="quotesIcon">{quoteIcon}</section>;
-};
+
 const TestmonialDesign = ({ quotes, image, name, designation }) => {
   return (
     <section className="testmonial_design_sect">
