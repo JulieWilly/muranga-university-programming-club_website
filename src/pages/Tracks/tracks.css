@@ -98,6 +98,7 @@
   border: 2px solid #71458c;
   padding: 0.1rem 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 .enroll:hover{
   background: #71458c   ;
