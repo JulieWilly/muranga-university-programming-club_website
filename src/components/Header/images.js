@@ -1,5 +1,5 @@
 const Images = {
-    image1: (require('./8'))
-}
+  image1: require("./8"),
+};
 
-export default Images
+export default Images;

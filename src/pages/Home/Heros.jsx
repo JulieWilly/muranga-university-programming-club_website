@@ -1,4 +1,5 @@
-import "./homeSection.css";
+import "../../components/Header/homeSection.css";
+
 const ClubImages = ({ ClubImages }) => {
   return (
     <>
@@ -11,7 +12,7 @@ const ClubImages = ({ ClubImages }) => {
 
 const Heros = () => {
   return (
-    <section className='heros_sect'>
+    <section className="heros_sect">
       <ClubImages />
       <div className="club_info">
         <p className="short_desc">Learn from Today</p>
@@ -24,8 +25,7 @@ const Heros = () => {
           solutions using programming.
         </p>
 
-      <button className="explore_courses">Explore courses</button>
-
+        <button className="explore_courses">Explore courses</button>
       </div>
       <ClubImages />
     </section>
