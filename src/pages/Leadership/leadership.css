@@ -8,7 +8,7 @@
 }
 
 .banner_sect {
-    height: 30vh;
+    height: auto;
     background: var(--banner-color);
     color: var(--white-color);
 }
@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem 0  ;
     
 }
 
@@ -41,16 +42,17 @@
 
 .leadersCards {
     display: flex;
-    gap: 2rem;
+    gap: 2rem 0;
     flex-wrap: wrap;
+    border: 2px solid black;
     justify-content: space-around;
     margin-bottom: 2rem;
 }
 .leaders_cards {
     width: 40%;
+    border: 2px solid black;
     border-radius: 1rem;
     display: flex;
-    gap: 1rem;
     background:var(--card_background);
     flex-direction: row;
     padding: .5rem;
@@ -69,7 +71,6 @@
     background-position: center;
     background-size: cover;
     display: grid;
-    padding:    5rem;
     place-content: center;
     border-radius: 50%;
 }
