@@ -26,20 +26,19 @@ const Header = () => {
           <Logo logo={<FaCode />} label="Muranga" />
         </div>
         <div className="links">
-          <Link to="/">
+          <Link className="Links" to="/">
             <NavigationLinks label="Home" />
           </Link>
-          <Link to="/leadership">
+          <Link className="Links" to="/leadership">
             <NavigationLinks label="Leadership" />
           </Link>
-          <Link to="/tracks">
+          <Link className="Links" to="/tracks">
             <NavigationLinks label="Tracks" />
           </Link>
-          <Link to="/events">
+          <Link className="Links" to="/events">
             <NavigationLinks label="Events" />
           </Link>
         </div>
-        <p></p>
         <button>Apply</button>
       </div>
       

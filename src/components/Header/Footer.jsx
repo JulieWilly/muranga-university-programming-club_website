@@ -1,5 +1,11 @@
 import SocialIcons from "../SocialIcons";
+import { BsTwitterX } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 import "./homeSection.css";
+import { Link } from 'react-router-dom'
 import NavigationLinks from "./NavigationLinks";
 
 const Form = () => {
@@ -22,14 +28,30 @@ const Footer = () => {
         <h1>MUTC</h1>
 
         <p>Programming Hub</p>
-        <div className="nav_links">
-          <NavigationLinks label="Home" />
-          <NavigationLinks label="Leadership" />
-          <NavigationLinks label="Tracks" />
-          <NavigationLinks label="Events" />
+        <div className="links">
+          <Link className="Links" to="/">
+            <NavigationLinks label="Home" />
+          </Link>
+          <Link className="Links" to="/leadership">
+            <NavigationLinks label="Leadership" />
+          </Link>
+          <Link className="Links" to="/tracks">
+            <NavigationLinks label="Tracks" />
+          </Link>
+          <Link className="Links" to="/events">
+            <NavigationLinks label="Events" />
+          </Link>
         </div>
+        
         <h2>Follow us</h2>
-        <SocialIcons />
+        <div className="social_icons">
+          <SocialIcons social_icon={<BsTwitterX/>}/>
+          <SocialIcons social_icon={<FaFacebookF/>}/>
+          <SocialIcons social_icon={<FaLinkedinIn/>}/>
+          <SocialIcons social_icon={<FaInstagram/>}/>
+          <SocialIcons social_icon={<FaWhatsapp/>}/>
+
+      </div>
         <Form />
         <hr />
         <p className="footer_note">

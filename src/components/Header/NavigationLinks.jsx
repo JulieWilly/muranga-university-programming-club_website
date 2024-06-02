@@ -5,13 +5,7 @@ import { Link } from "react-router-dom";
 const NavigationLinks = ({ label }) => {
   return (
     <div className="nav-links">
-      <nav>
-        <ol>
-          <li>
-            <a href="#">{label}</a>
-          </li>
-        </ol>
-      </nav>
+      <p>{label}</p>
     </div>
   );
 };

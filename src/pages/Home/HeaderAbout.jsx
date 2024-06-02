@@ -2,27 +2,19 @@
 import { TbTargetArrow } from "react-icons/tb";
 import { FcBinoculars } from "react-icons/fc";
 import { BiNotepad } from "react-icons/bi";
+import groupImg from '../../images/group.jpg'
 
-const AboutItems = ({ title, description }) => {
+const AboutItems = ({ image, title, description }) => {
   return (
-    <div className="abt_items">
-      {/* <div className="abt_img">
-                {image}
-            </div> */}
-      <div className="abt_desc">
+    <div className="about_sect">
+      <div className="about_text">
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
+      <div className="abt_img">
+        <img src={image} alt="About us group image" />
+      </div>
     </div>
-  );
-};
-
-const AboutImg = () => {
-  return (
-    // <div className="about_img">
-
-    // </div>
-    <></>
   );
 };
 
@@ -42,23 +34,10 @@ const CoreValues = ({ ValuesIcon, valuesTitle, valueDescription }) => {
 const HeaderAbout = () => {
   return (
     <section>
-      <div className="about_sect">
-        <div className="about_text">
-          <h1>About</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
-            quam architecto. Consequatur, nihil doloribus accusantium ea
-            explicabo dolor laboriosam quaerat eos repellat architecto error
-            laudantium, ad nam, praesentium qui molestias.
-          </p>
-        </div>
+      <div>
+        
 
-        <div className="about_img">
-          <img src="" alt="" />
-        </div>
-        {/* <AboutImag /> */}
-
-        {/* <AboutItems title="Asdsdksdksdkl" description={"dklsadklsdklas"} /> */}
+        <AboutItems image={groupImg} title="About" description={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,quam architecto. Consequatur, nihil doloribus accusantium ea explicabo dolor laboriosam quaerat eos repellat architecto error laudantium, ad nam, praesentium qui molestias."} />
       </div>
       <div className="abt_core_values">
         <CoreValues

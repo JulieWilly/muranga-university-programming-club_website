@@ -1,6 +1,8 @@
 import { FaFacebookF } from "react-icons/fa6";
 import Footer from "../../components/Header/Footer";
+import drNdiaImg from '../../images/group.jpg'
 import "./leadership.css";
+import SocialIcons from "../../components/SocialIcons";
 
 const Cards = ({
   leadersImg,
@@ -11,17 +13,24 @@ const Cards = ({
 }) => {
   return (
     <div className="leaders_cards">
-      <div className="leaders_img">
-        {leadersImg}
-        {/* <img src={leadersImg} alt="" /> */}
-      </div>
-      <div className="leaders_details">
-        <h1>{leaderName}</h1>
-        <h2>{leadersDesignation}</h2>
-        <p>{leadersBiography}</p>
-        <div>{leadersSocials}</div>
-      </div>
-    </div>
+        <div className="top">
+          <div className="leaders_img">
+          {/* {leadersImg} */}
+          <img src={leadersImg} alt="" />
+          </div>
+          <div className="leaders_details">
+            <h2>{leadersDesignation}</h2>
+            <p>{leadersBiography}</p>
+        </div>
+          
+        </div>
+        <div className="bottom">
+          <h1>{leaderName}</h1>
+          <div className="leaders_icons">{leadersSocials}</div>
+          
+
+          </div>
+        </div>
   );
 };
 
@@ -30,11 +39,11 @@ const LeadersCard = () => {
     <>
       <div className="leadersCards">
         <Cards
-          leadersImg={<FaFacebookF />}
+          leadersImg={drNdiaImg}
           leaderName="DR John Ndia"
           leadersDesignation="Patron of the club"
           leadersBiography="Please create a brief biography for him and use any suitable placeholder images found online for his profile picture."
-          leadersSocials={<FaFacebookF />}
+          leadersSocials={<SocialIcons />}
         />
         <Cards
           leadersImg={<FaFacebookF />}
@@ -48,7 +57,7 @@ const LeadersCard = () => {
           leaderName="DR John Ndia"
           leadersDesignation="Patron of the club"
           leadersBiography="Please create a brief biography for him and use any suitable placeholder images found online for his profile picture."
-          leadersSocials={<FaFacebookF />}
+          // leadersSocials={<SocialIcons />}
         />
         <Cards
           leadersImg={<FaFacebookF />}

@@ -50,38 +50,49 @@
   margin-bottom: 2rem;
 }
 .leaders_cards {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+.top {
   width: 30rem;
-  border: 2px solid black;
-  border-radius: 1rem;
+  border: 1px solid black;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   display: flex;
   background: var(--card_background);
   flex-direction: row;
   padding: 0.5rem;
+  align-items: center;
+}
+
+.leaders_cards .leaders_img {
+  height: 15rem;
+  width: 50%;
+}
+
+.leaders_cards .leaders_img img {
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-/* .leaders_cards .leaders_img img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    border: 2px solid red;
-} */
-.leaders_cards .leaders_img {
-  width: 50%;
-  background-image: url("../../images/user.jpg");
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
+.bottom h1 {
+    font-size: 1.5rem;
+    padding: .5rem;
 }
 
 .leaders_cards .leaders_details {
   padding: 0 1rem;
 }
-.leaders_details h1{
-    /* background-color: red; */
-    text-align: left;
-    font-size: 1.5rem;
-}
+
 .leaders_details h2 {
   padding: 0.7rem 0;
   color: var(--header-color);

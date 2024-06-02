@@ -1,5 +1,5 @@
 import "../../components/Header/homeSection.css";
-
+import userImage from '../../components/Header/user.jpg'
 const ClubImages = ({ ClubImages }) => {
   return (
     <>
@@ -13,7 +13,7 @@ const ClubImages = ({ ClubImages }) => {
 const Heros = () => {
   return (
     <section className="heros_sect">
-      <ClubImages />
+      <ClubImages ClubImages={userImage}/>
       <div className="club_info">
         <p className="short_desc">Learn from Today</p>
         <h1>MUTC </h1>
@@ -27,7 +27,7 @@ const Heros = () => {
 
         <button className="explore_courses">Explore courses</button>
       </div>
-      <ClubImages />
+      <ClubImages ClubImages={userImage}/>
     </section>
   );
 };
