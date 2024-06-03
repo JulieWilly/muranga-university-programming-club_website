@@ -376,7 +376,6 @@ hr {
     align-items: center;
   }
   .nav-links{
-    border: 2p solid black;
     padding: 0;
     margin: 0;
   }
@@ -393,7 +392,11 @@ hr {
   }
 
   .links{
-    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
   }
 
   .heros_sect .images{
@@ -430,5 +433,12 @@ hr {
   }
   .heros_sect .images{
     height: 50vh;
+  }
+  .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
   }
 }
