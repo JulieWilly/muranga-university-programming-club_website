@@ -89,26 +89,26 @@ const SocialAccounts = [
         facebookdUrl: "facebook.com",
         instagramUrl: "instagram.com",
     },
-    {
-        leadersImg:dummy_member2Img,
-        leaderName: "Paul Karanja",
-        leadersDesignation:"Cloud engineering lead",
-        leadersBiography: "Please create a brief biography for him and use any suitable placeholder images found online for his profile picture.",
-        twitterUrl: "x.com",
-        linkedinUrl: "linkedin.com",
-        facebookdUrl: "facebook.com",
-        instagramUrl: "instagram.com",
-    },
-    {
-        leadersImg:dummy_member3Img,
-        leaderName: "Evyonn Mbithe",
-        leadersDesignation:"Power platform lead",
-        leadersBiography: "Please create a brief biography for him and use any suitable placeholder images found online for his profile picture.",
-        twitterUrl: "x.com",
-        linkedinUrl: "linkedin.com",
-        facebookdUrl: "facebook.com",
-        instagramUrl: "instagram.com",
-    }
+    // {
+    //     leadersImg:dummy_member2Img,
+    //     leaderName: "Paul Karanja",
+    //     leadersDesignation:"Cloud engineering lead",
+    //     leadersBiography: "Please create a brief biography for him and use any suitable placeholder images found online for his profile picture.",
+    //     twitterUrl: "x.com",
+    //     linkedinUrl: "linkedin.com",
+    //     facebookdUrl: "facebook.com",
+    //     instagramUrl: "instagram.com",
+    // },
+    // {
+    //     leadersImg:dummy_member3Img,
+    //     leaderName: "Evyonn Mbithe",
+    //     leadersDesignation:"Power platform lead",
+    //     leadersBiography: "Please create a brief biography for him and use any suitable placeholder images found online for his profile picture.",
+    //     twitterUrl: "x.com",
+    //     linkedinUrl: "linkedin.com",
+    //     facebookdUrl: "facebook.com",
+    //     instagramUrl: "instagram.com",
+    // }
 
 
 ]

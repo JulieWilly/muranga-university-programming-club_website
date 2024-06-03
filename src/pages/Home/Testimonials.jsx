@@ -1,8 +1,11 @@
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import dummy_memberImg from '../../images/dummy_member1.jpg'
-import dummy_member2Img from '../../images/dummy_member2.jpeg'
-import dummy_member3Img from '../../images/dummy_member3.jpg'
+// import dummy_memberImg from '../../images/dummy_member1.jpg'
+// import dummy_member2Img from '../../images/dummy_member2.jpeg'
+// import dummy_member3Img from '../../images/dummy_member3.jpg'
+import dummy_memberImg from '../../images/dummy_member5.jpg'
+import dummy_member2Img from '../../images/dummy_member6.jpeg'
+import dummy_member3Img from '../../images/dummy_memeber7.jpg'
 
 import "../../components/Header/homeSection.css";
 import PageSubtitles from "../../components/PageSubtitle";

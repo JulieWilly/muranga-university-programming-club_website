@@ -254,7 +254,7 @@ button:hover {
   width: 50%;
   object-fit: cover;
   display: block;
-  clip-path: polygon(50% 0%, 84% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%, 14% 0);
+  /* clip-path: polygon(50% 0%, 84% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%, 14% 0); */
 }
 
 .desingnations p {
