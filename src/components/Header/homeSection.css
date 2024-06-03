@@ -15,10 +15,12 @@ body {
   --black-color: #000000;
   --hover-color: #4e166f;
 }
+
 .header {
   display: flex;
   padding: 0.5rem 1rem;
   flex-direction: row;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -47,6 +49,8 @@ body {
   padding: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 0 1rem;
 
 }
@@ -86,8 +90,6 @@ button:hover {
 
 .herosSect{
   position: relative;
-  
-
 }
 .heros_sect .images {
   height: 100vh;
@@ -380,7 +382,7 @@ hr {
   }
 
   .club_info {
-    width: 70%;
+    width: 90%;
   }
   .testimonials_sect .user_testimonial{
     display: flex;
@@ -389,7 +391,14 @@ hr {
     padding: 0;
     align-items: center ;
   }
- 
+
+  .links{
+    border: 2px solid;
+  }
+
+  .heros_sect .images{
+    height: 70vh;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 850px) {
@@ -417,6 +426,9 @@ hr {
     align-items: center ;
   }
   .club_info {
-    width: 70%;
+    width: 85%;
+  }
+  .heros_sect .images{
+    height: 50vh;
   }
 }
