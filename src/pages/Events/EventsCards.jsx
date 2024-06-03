@@ -105,7 +105,7 @@ const EventsCards = () => {
         <div className="alternatingEvents">
           <AlternatingEvents
             eventImage={cyber_securityImg}
-            number="1"
+            // number="1"
             eventLabel="Cyber security"
             eventDay="Monday"
             eventVenue={"Lab F04"}
@@ -113,7 +113,7 @@ const EventsCards = () => {
             eventTutor={"Webster Ifedha"}
           />
           <AlternatingEvents
-            number="2"
+            // number="2"
             eventImage={UI_UXIMG}
             eventLabel="UI / UX"
             eventDay="Tuesday"
@@ -122,7 +122,7 @@ const EventsCards = () => {
             eventTutor={"Manase Gunga"}
           />
           <AlternatingEvents
-            number="3"
+            // number="3"
             eventImage={web_devIMG}
             eventLabel="Web Development"
             eventDay="Wednesday"
@@ -132,7 +132,7 @@ const EventsCards = () => {
           />
          
           <AlternatingEvents
-            number="4"
+            // number="4"
             eventImage={androidImg}
             eventLabel="Mobile apps development"
             eventDay="Thursday"
@@ -142,7 +142,7 @@ const EventsCards = () => {
           />
 
           <AlternatingEvents
-            number="5"
+            // number="5"
             eventImage={cloud_engineeringImg}
             eventLabel="Cloud engineering"
             eventDay="Friday"
@@ -151,7 +151,7 @@ const EventsCards = () => {
             eventTutor={"Paul Karanja"}
           />
           <AlternatingEvents
-            number="6"
+            // number="6"
             eventImage={power_platformImg}
             eventLabel="Power Platform"
             eventDay="Saturday"
